@@ -1,0 +1,65 @@
+### Health check
+GET http://localhost:4000/api/health
+
+
+### Get listings without token - should return 401
+GET http://localhost:4000/api/listings
+
+
+### Signup
+# @name signup
+POST http://localhost:4000/api/auth/signup
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "testuser@example.com",
+  "password": "secret123"
+}
+
+
+### Login as Kathir
+# @name login
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "kathir@gmail.com",
+  "password": "pass1234"
+}
+
+
+### Get current user's listings
+GET http://localhost:4000/api/listings
+Authorization: Bearer {{login.response.body.$.token}}
+
+
+### Create listing for current user
+POST http://localhost:4000/api/listings
+Content-Type: application/json
+Authorization: Bearer {{login.response.body.$.token}}
+
+{
+  "title": "Day 35 Token Listing",
+  "city": "Chennai",
+  "price": 22000,
+  "status": "available"
+}
+
+
+### Update current user's listing
+PUT http://localhost:4000/api/listings/15
+Content-Type: application/json
+Authorization: Bearer {{login.response.body.$.token}}
+
+{
+  "title": "Updated Token Listing",
+  "city": "Chennai",
+  "price": 25000,
+  "status": "pending"
+}
+
+
+### Delete current user's listing
+DELETE http://localhost:4000/api/listings/15
+Authorization: Bearer {{login.response.body.$.token}}

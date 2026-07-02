@@ -1,0 +1,65 @@
+.app {
+  min-height: 100vh;
+  padding: 48px 20px;
+}
+
+.app-header {
+  max-width: 760px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #2563eb;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.intro {
+  margin: 14px auto 0;
+  max-width: 560px;
+  color: #4b5563;
+}
+
+.result-banner {
+  margin: 22px auto 0;
+  max-width: 480px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  font-weight: 800;
+}
+
+.activity-grid {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 720px) {
+  .app {
+    padding: 32px 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .activity-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,136 @@
+.app {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.intro {
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #ddd6fe;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.intro p {
+  color: #f5f3ff;
+  font-size: 18px;
+}
+
+.duel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.name-card {
+  min-height: 260px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: #1e1b4b;
+  color: #f8fafc;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 18px 40px rgba(76, 29, 149, 0.22);
+}
+
+.name-card:hover {
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.name-card:nth-child(1) {
+  background: #312e81;
+}
+
+.name-card:nth-child(2) {
+  background: #581c87;
+}
+
+.name-card:nth-child(3) {
+  background: #7f1d1d;
+}
+
+.name-card h2 {
+  margin: 34px 0 10px;
+  font-size: 32px;
+}
+
+.name-card p {
+  min-height: 52px;
+  margin: 0 0 28px;
+  color: #ede9fe;
+  font-size: 17px;
+}
+
+.name-card strong {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fde68a;
+}
+
+.name-card:nth-child(2) strong {
+  color: #bfdbfe;
+}
+
+.name-card:nth-child(3) strong {
+  color: #fecdd3;
+}
+
+.domain {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #f5f3ff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.result {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  background: #2e1065;
+}
+
+.result p {
+  margin: 0 0 8px;
+  color: #ddd6fe;
+  font-weight: 700;
+}
+
+.result h2 {
+  margin: 0;
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding-top: 32px;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .duel {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,178 @@
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-panel,
+.ticket-panel {
+  padding: 48px;
+}
+
+.form-panel {
+  background: #f7f3ea;
+}
+
+.ticket-panel {
+  display: grid;
+  place-items: center;
+  background: #17202a;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #c14f2e;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  color: #17202a;
+  font-size: 44px;
+}
+
+.intro {
+  max-width: 420px;
+  margin: 14px 0 28px;
+  color: #5c6268;
+}
+
+.rsvp-form {
+  max-width: 440px;
+  display: grid;
+  gap: 18px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  color: #26313b;
+  font-weight: 700;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d3c7b7;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #17202a;
+  background: #fff;
+  font: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: 3px solid #f0b85a;
+  border-color: #17202a;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 14px 18px;
+  color: #fff;
+  background: #c14f2e;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #96391f;
+}
+
+.message {
+  max-width: 440px;
+  margin: 0;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.intro + .message {
+  margin-bottom: 18px;
+}
+
+.error {
+  color: #8f1d1d;
+  background: #ffe1df;
+}
+
+.success {
+  color: #155b35;
+  background: #dff7e9;
+}
+
+.ticket {
+  width: min(380px, 100%);
+  overflow: hidden;
+  border-radius: 18px;
+  color: #17202a;
+  background: #fffaf1;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.3);
+}
+
+.ticket-top,
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  color: #fff;
+  background: #c14f2e;
+  font-weight: 700;
+}
+
+.ticket-top p,
+.ticket-footer span {
+  margin: 0;
+}
+
+.ticket-top span {
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: #17202a;
+  background: #f0b85a;
+  font-size: 14px;
+}
+
+.ticket-body {
+  padding: 34px 28px;
+}
+
+.ticket-label {
+  margin: 18px 0 6px;
+  color: #6f7680;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ticket-label:first-child {
+  margin-top: 0;
+}
+
+.ticket h2 {
+  margin: 0;
+  color: #17202a;
+  font-size: 34px;
+}
+
+.ticket-body p {
+  margin-top: 0;
+}
+
+@media (max-width: 760px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .form-panel,
+  .ticket-panel {
+    padding: 28px 20px;
+  }
+}

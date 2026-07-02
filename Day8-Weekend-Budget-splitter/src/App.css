@@ -1,0 +1,199 @@
+.app {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.tour-panel,
+.expense-form,
+.expense-list,
+.subtotals,
+.summary-box {
+  background: #ffffff;
+  border: 1px solid #d8e0dc;
+  border-radius: 8px;
+}
+
+.tour-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: end;
+  padding: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #407060;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  color: #1d2b27;
+  font-size: 40px;
+}
+
+h2 {
+  color: #1d2b27;
+  font-size: 22px;
+}
+
+.tour-inputs,
+.expense-form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: #31423d;
+  font-weight: 700;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #b8c5c0;
+  border-radius: 6px;
+  padding: 11px 12px;
+  color: #17211e;
+  background: #ffffff;
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 11px 14px;
+  color: #ffffff;
+  background: #28745d;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1f5c49;
+}
+
+.budget-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.summary-box {
+  padding: 20px;
+}
+
+.summary-box span,
+.expense-item span {
+  display: block;
+  color: #667873;
+  font-size: 14px;
+}
+
+.summary-box strong {
+  display: block;
+  margin-top: 8px;
+  color: #16241f;
+  font-size: 28px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.expense-form,
+.expense-list,
+.subtotals {
+  padding: 20px;
+}
+
+.error {
+  margin-bottom: 0;
+  color: #b42318;
+  font-weight: 700;
+}
+
+.expense-list {
+  display: grid;
+  gap: 12px;
+}
+
+.expense-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid #e2e8e5;
+  border-radius: 8px;
+  background: #f8fbf9;
+}
+
+.expense-item p {
+  margin: 0;
+  color: #1b302a;
+  font-weight: 700;
+}
+
+.expense-item button {
+  background: #9b332b;
+}
+
+.expense-item button:hover {
+  background: #7c271f;
+}
+
+.subtotals {
+  margin-top: 16px;
+}
+
+.subtotal-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.subtotal-list p {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  padding: 12px;
+  border-radius: 6px;
+  background: #eef5f1;
+}
+
+@media (max-width: 800px) {
+  .tour-panel,
+  .budget-grid,
+  .content-grid,
+  .subtotal-list {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .expense-item {
+    grid-template-columns: 1fr;
+  }
+}

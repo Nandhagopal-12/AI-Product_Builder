@@ -1,0 +1,108 @@
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.activity-card.leader {
+  border-color: #f97316;
+}
+
+.card-topline,
+.vote-row,
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.emoji {
+  font-size: 2.7rem;
+}
+
+.leader-badge,
+.tie-badge {
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.leader-badge {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.tie-badge {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.activity-card h2 {
+  margin: 0;
+  color: #111827;
+}
+
+.vibe {
+  margin: 0;
+  color: #4b5563;
+}
+
+.details {
+  align-items: stretch;
+}
+
+.details div {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.details dt {
+  color: #6b7280;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.details dd {
+  margin: 4px 0 0;
+  color: #111827;
+  font-weight: 800;
+}
+
+.vote-row {
+  margin-top: auto;
+}
+
+.vote-row p {
+  margin: 0;
+  color: #4b5563;
+  font-weight: 700;
+}
+
+.vote-row span {
+  color: #111827;
+  font-size: 1.6rem;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 18px;
+  background: #2563eb;
+  color: white;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}

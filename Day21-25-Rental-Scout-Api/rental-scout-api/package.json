@@ -1,0 +1,21 @@
+{
+    "name":  "rental-scout-api",
+    "version":  "1.0.0",
+    "description":  "Small Express API for the Rental Scout project",
+    "main":  "server.js",
+    "scripts":  {
+                    "server":  "node --watch server.js",
+                    "start":  "node server.js",
+                    "dev":  "node --watch server.js"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "type":  "commonjs",
+    "dependencies":  {
+                         "cors":  "^2.8.6",
+                         "express":  "^5.2.1"
+                     }
+}
