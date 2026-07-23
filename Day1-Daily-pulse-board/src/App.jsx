@@ -5,8 +5,6 @@ const moodOptions = [
   { label: 'Happy', className: 'happy' },
   { label: 'Calm', className: 'calm' },
   { label: 'Tired', className: 'tired' },
-  { label: 'Motivated', className: 'motivated' }, // New option
-  { label: 'Stressed', className: 'stressed' },   // New option
 ]
 
 const energyOptions = [
