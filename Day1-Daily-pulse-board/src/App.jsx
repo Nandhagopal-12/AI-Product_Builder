@@ -31,7 +31,7 @@ function App() {
     <main className="app">
       <section className="hero">
         <p className="eyebrow">Daily check-in</p>
-        <h1>feature1 pulse board</h1>
+        <h1>feature1 2pulse board</h1>
         <p className="intro">
           Choose your mood, energy, and focus for today.
         </p>
