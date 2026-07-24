@@ -12,9 +12,11 @@ CREATE TABLE listings (
   location TEXT NOT NULL,
   price INTEGER NOT NULL,
   bedrooms INTEGER NOT NULL,
+  status VARCHAR(20) DEFAULT 'available',
   bathrooms INTEGER NOT NULL,
   description TEXT NOT NULL,
   image_url TEXT,
+  user_id INTEGER REFERENCES users(id),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

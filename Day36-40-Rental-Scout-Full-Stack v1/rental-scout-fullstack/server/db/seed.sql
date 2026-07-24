@@ -1,3 +1,15 @@
+INSERT INTO users (
+  name,
+  email,
+  password_hash
+)
+VALUES (
+  'Test User',
+  'test@example.com',
+  'test_password_hash'
+)
+ON CONFLICT (email) DO NOTHING;
+
 INSERT INTO listings (
     title, 
     location, 
@@ -34,4 +46,22 @@ VALUES
   1,
   'A simple rental flat suitable for students or working professionals.',
   'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688'
+),
+(
+  'Lakeview farmhouse',
+  'Ladhak',
+  18000,
+  1,
+  1,
+  'A lake-view famrhouse for travellers.',
+  'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85'
+),
+(
+  '4BHK Aparment with Studio',
+  'Mangalore',
+  26000,
+  4,
+  1,
+  'A 4BHK large family Apartment with compact Studio.',
+  'https://images.unsplash.com/photo-1484154218962-a197022b5858'
 );
